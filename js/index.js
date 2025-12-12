@@ -28,7 +28,9 @@ for(let i=0;i<list.length;i++){
 for(let i=0;i<inputs.length;i++){
 	inputs[i].addEventListener('click',function(){
 		inputs[i].classList.toggle('check');
-		leds[inputs[i].id].classList.toggle(colors[inputs[i].id]);
+		if(index==4){
+			leds[inputs[i].id].classList.toggle(colors[inputs[i].id]);
+		}
 		/*if(inputs[i].parentElement.children[3]){
 			inputs[i].parentElement.children[3].src="files/ledred.png";
 		}*/
