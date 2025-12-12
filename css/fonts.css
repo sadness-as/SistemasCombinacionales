@@ -1,0 +1,13 @@
+@font-face{
+	font-family: 'Questrial';
+	src: url('../fonts/Questrial-Regular.woff2') format('woff2'), url('../fonts/Questrial-Regular.ttf') format('truetype');
+	font-weight: normal;
+}
+@font-face{
+	font-family: 'Roboto';
+	src: url('../fonts/RobotoSlab-VariableFont_wght.ttf') format('truetype');
+}
+@font-face{
+	font-family: 'Dinot';
+	src: url('../fonts/DINOT-Regular.woff2') format('woff2'), url('../fonts/DINOT-Regular.ttf') format('truetype');
+}

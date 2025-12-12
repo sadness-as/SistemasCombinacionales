@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>2 || Sistemas combinacionales</title>
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+	<div class="header">
+		<div class="bar flex jcsb aic">
+			<div class="logo flex aic jcc">
+				<img src="files/logo2.png" alt="logo">
+				<!--span>Arquitectura de Computadoras</span-->
+				<span>Codificador</span>
+				<span>Decodificador</span>
+				<span>Multiplexor</span>
+				<span>Demultiplexor</span>
+				<span>Comparador</span>
+			</div>
+			<div class="info">
+				<span class="btn-git flex jcsa aic">
+					<a href="#github" class="flex jcc aic">GitHub<img src="files/logo-github.png" alt="logo-github"><div class="line"></div></a>
+				</span>
+			</div>
+			<div class="btnMenu"></div>
+		</div>
+		<div class="container">
+			<div class="title"><span>Codificador</span></div>
+			<div class="content flex jcc aic">
+				<div class="sc codificador flex jcc aic">
+					<div class="inputs flex fdc jcsa aic">
+						<div class="in lines">
+							<p class="text">0</p><span>A0</span><div class="btnInput" id="0"></div>
+						</div>
+						<div class="in lines">
+							<p class="text">0</p><span>A1</span><div class="btnInput" id="1"></div>
+						</div>
+						<div class="in lines">
+							<p class="text">0</p><span>A2</span><div class="btnInput" id="2"></div>
+						</div>
+						<div class="in lines">
+							<p class="text">0</p><span>A3</span><div class="btnInput" id="3"></div>
+						</div>
+						<div class="in lines">
+							<p class="text">0</p><span>A4</span><div class="btnInput" id="4"></div>
+						</div>
+						<div class="in lines">
+							<p class="text">0</p><span>A5</span><div class="btnInput" id="5"></div>
+						</div>
+						<div class="in lines">
+							<p class="text">0</p><span>A6</span><div class="btnInput" id="6"></div>
+						</div>
+						<div class="in lines">
+							<p class="text">0</p><span>A7</span><div class="btnInput" id="7"></div>
+						</div>
+					</div>
+					<div class="box">
+						
+					</div>
+					<div class="outputs flex fdc jcsa aic">
+						<div class="out lines">
+							<p class="text">0</p><span>X</span><div class="outCircle"></div>
+						</div>
+						<div class="out lines">
+							<p class="text">0</p><span>Y</span><div class="outCircle"></div>
+						</div>
+						<div class="out lines">
+							<p class="text">0</p><span>Z</span><div class="outCircle"></div>
+						</div>
+					</div>
+				</div>
+				<div class="sc decodificador flex jcc aic none">
+					<div class="inputs flex fdc jcsa aic">
+						<div class="in lines">
+							<p class="text">0</p><span>X</span><div class="btnInput" id="0"></div>
+						</div>
+						<div class="in lines">
+							<p class="text">0</p><span>Y</span><div class="btnInput" id="1"></div>
+						</div>
+						<div class="in lines">
+							<p class="text">0</p><span>Z</span><div class="btnInput" id="2"></div>
+						</div>
+					</div>
+					<div class="box">
+						
+					</div>
+					<div class="outputs flex fdc jcsa aic">
+						<div class="out lines">
+							<p class="text">0</p><span>A0</span><div class="outCircle"></div>
+						</div>
+						<div class="out lines">
+							<p class="text">0</p><span>A1</span><div class="outCircle"></div>
+						</div>
+						<div class="out lines">
+							<p class="text">0</p><span>A2</span><div class="outCircle"></div>
+						</div>
+						<div class="out lines">
+							<p class="text">0</p><span>A3</span><div class="outCircle"></div>
+						</div>
+						<div class="out lines">
+							<p class="text">0</p><span>A4</span><div class="outCircle"></div>
+						</div>
+						<div class="out lines">
+							<p class="text">0</p><span>A5</span><div class="outCircle"></div>
+						</div>
+						<div class="out lines">
+							<p class="text">0</p><span>A6</span><div class="outCircle"></div>
+						</div>
+						<div class="out lines">
+							<p class="text">0</p><span>A7</span><div class="outCircle"></div>
+						</div>
+					</div>
+				</div>
+				<div class="sc multiplexor flex jcc aic none">
+					<div class="inputs flex fdc jcsa aic">
+						<div class="in lines">
+							<p class="text">0</p><span>A0</span><div class="btnInput" id="0"></div>
+						</div>
+						<div class="in lines">
+							<p class="text">0</p><span>A1</span><div class="btnInput" id="1"></div>
+						</div>
+						<div class="in lines">
+							<p class="text">0</p><span>A2</span><div class="btnInput" id="2"></div>
+						</div>
+						<div class="in lines">
+							<p class="text">0</p><span>A3</span><div class="btnInput" id="3"></div>
+						</div>
+						<div class="in lines">
+							<p class="text">0</p><span>A4</span><div class="btnInput" id="4"></div>
+						</div>
+						<div class="in lines">
+							<p class="text">0</p><span>A5</span><div class="btnInput" id="5"></div>
+						</div>
+						<div class="in lines">
+							<p class="text">0</p><span>A6</span><div class="btnInput" id="6"></div>
+						</div>
+						<div class="in lines">
+							<p class="text">0</p><span>A7</span><div class="btnInput" id="7"></div>
+						</div>
+					</div>
+					<div class="box">
+						<div class="box1">
+							<div class="caja">
+								<div class="barra"></div>
+							</div>
+						</div>
+						<div class="selector flex aic jcsa">
+							<div class="sel">
+								<p class="text">0</p><span>X</span><div class="btnInput" id="0"></div>
+							</div>
+							<div class="sel">
+								<p class="text">0</p><span>Y</span><div class="btnInput" id="1"></div>
+							</div>
+							<div class="sel">
+								<p class="text">0</p><span>Z</span><div class="btnInput" id="2"></div>
+							</div>
+						</div>
+					</div>
+					<div class="outputs flex fdc jcsa aic">
+						<div class="out lines">
+							<p class="text">0</p><span>S</span><div class="outCircle"></div>
+						</div>
+					</div>
+				</div>
+				<div class="sc demultiplexor none">
+					
+				</div>
+				<div class="sc comparador flex jcc aic none">
+					<div class="inputs flex fdc jcsa aic">
+						<div class="in lines">
+							<p class="text">0</p><span>A0</span><div class="btnInput" id="0"></div>
+						</div>
+						<div class="in lines">
+							<p class="text">0</p><span>A1</span><div class="btnInput" id="1"></div>
+						</div>
+						<div class="in lines">
+							<p class="text">0</p><span>A2</span><div class="btnInput" id="2"></div>
+						</div>
+						<div class="in lines">
+							<p class="text">0</p><span>A3</span><div class="btnInput" id="3"></div>
+						</div>
+						<div class="in lines">
+							<p class="text">0</p><span>B0</span><div class="btnInput" id="4"></div>
+						</div>
+						<div class="in lines">
+							<p class="text">0</p><span>B1</span><div class="btnInput" id="5"></div>
+						</div>
+						<div class="in lines">
+							<p class="text">0</p><span>B2</span><div class="btnInput" id="6"></div>
+						</div>
+						<div class="in lines">
+							<p class="text">0</p><span>B3</span><div class="btnInput" id="7"></div>
+						</div>
+					</div>
+					<div class="box">
+						
+					</div>
+					<div class="outputs flex fdc jcsa aic">
+						<div class="out lines">
+							<p class="text">0</p><span>A &gt B</span><div class="outCircle"></div>
+						</div>
+						<div class="out lines">
+							<p class="text">0</p><span>A = B</span><div class="outCircle"></div>
+						</div>
+						<div class="out lines">
+							<p class="text">0</p><span>A &lt B</span><div class="outCircle"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/index.js"></script>
+</body>
+</html>

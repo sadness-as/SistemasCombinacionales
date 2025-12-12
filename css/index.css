@@ -1,0 +1,399 @@
+@import url('fonts.css');
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	font-family: sans-serif;
+}
+.header{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background-image: url(../files/bg1.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+.bar{
+	width: 100%;
+	background: rgba(17,17,17,.8);
+	height: 80px;
+	padding: 0 5%;
+	border-bottom: 2px solid #fff;
+	backdrop-filter: blur(10px);
+	z-index: 1000;
+}
+.logo{
+	transition: all .3s linear;
+}
+.logo img{
+	width: 50px;
+	height: 50px;
+	margin: 0 10px;
+	transform: rotateY(180deg);
+}
+.logo span{
+	position: relative;
+	padding: 0 10px;
+	height: 40px;
+	line-height: 40px;
+	color: #fff;
+	font-family: "Questrial";
+	font-size: 20px;
+	cursor: pointer;
+}
+.logo span:before{
+	content: '';
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	width: 0;
+	height: 2px;
+	background: #fff;
+	transition: all .5s;
+}
+.logo span:hover:before{
+	left: 0;
+	width: 100%;
+}
+.info{
+	background: rgba(255,255,255,.90);
+}
+.info a{
+	position: relative;
+	padding: 0 15px;
+	height: 80px;
+	color: #000;
+	font-family: 'Questrial';
+	font-size: 18px;
+	text-decoration: none;
+	transition: all .5s;
+}
+.info a .line{
+	position: absolute;
+	left: 50%;
+	bottom: -2px;
+	width: 0;
+	height: 3px;
+	background: #000;
+	transition: all .5s;
+}
+.info a:hover .line{
+	width: 100%;
+	left: 0;
+}
+.info img{
+	width: 50px;
+	height: 50px;
+	margin-left: 10px;
+}
+.btnMenu{
+	width: 50px;
+	height: 50px;
+	border: 2px solid #fff;
+	cursor: pointer;
+	display: none;
+}
+.btnMenu:hover{
+	box-shadow: 0 0 5px #fff,inset 0 0 5px #fff;
+}
+.container{
+	width: 100%;
+	top: 0;
+	left: 0;
+	height: calc(100% - 80px);
+}
+.container .title{
+	text-align: center;
+	height: 80px;
+	line-height: 80px;
+	border-bottom: 2px solid #fff;
+}
+.container .title span{
+	font-family: "Questrial";
+	letter-spacing: 8px;
+	font-size: 35px;
+	text-transform: uppercase;
+	color: #fff;
+}
+.content{
+	background: rgba(0,0,0,0.8);
+	height: calc(100% - 80px);
+	backdrop-filter: blur(5px);
+}
+.text{
+	font-family: "Questrial";
+	color: #fff;
+}
+/*---CODIFICADOR---*************************************************************************************/
+.codificador{
+}
+.inputs{
+	width: 100px;
+	height: 250px;
+}
+.btnInput{
+	position: absolute;
+	top: 0;
+	left: -35px;
+	width: 30px;
+	height: 16px;
+	border-radius: 15px;
+	border: 1px solid #fff;
+	cursor: pointer;
+}
+.check{
+	background: #fff;
+}
+.btnInput:before{
+	position: absolute;
+	content: '';
+	top: 2px;
+	left: 3px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: #fff;
+	transition: all .5s;
+}
+.check:before{
+	left: 16px;
+	background: rgba(0,0,0,0.8);
+}
+.inputs .in,
+.out{
+	position: relative;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	font-family: "Questrial";
+}
+.inputs .in:before,
+.outputs .out:before{
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 30px;
+	height: 2px;
+	background: #fff;
+}
+.inputs .in:after,
+.outputs .out:after{
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 30px;
+	height: 2px;
+	background: #fff;
+}
+.inputs .in span{
+	position: absolute;
+	top: 2px;
+	right: -30px;
+	font-family: "Questrial";
+}
+.outputs{
+	position: relative;
+	width: 100px;
+	height: 120px;
+}
+.outputs .out span{
+	position: absolute;
+	top: 2px;
+	left: -25px;
+	font-family: "Questrial";
+}
+.outCircle{
+	position: absolute;
+	top: 2px;
+	right: -25px;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	border: 1px solid #fff;
+}
+.check2{
+	background: #fff;
+	box-shadow: 0 0 5px #fff;
+}
+.box{
+	position: relative;
+	border: 2px solid #fff;
+	width: 200px;
+	height: 350px;
+}
+/*---DECODIFICADOR---*************************************************************************************/
+.decodificador .inputs{
+	height: 120px;
+}
+.decodificador .outputs{
+	height: 250px;
+}
+.decodificador .inputs .in span{
+	right: -25px;
+}
+.decodificador .outputs .out span{
+	left: -30px;
+}
+/*---MULTIPLEXOR---*************************************************************************************/
+.multiplexor .box{
+	margin-top: 100px;
+	height: 450px;
+	border: none;
+}
+.multiplexor .box1{
+	position: relative;
+	width: 200px;
+	height: 350px;
+	border: 2px solid #fff;
+}
+.multiplexor .box1 .caja{
+	position: relative;
+	width: 130px;
+	height: 300px;
+	top: 25px;
+	left: 35px;
+	overflow: hidden;
+}
+.multiplexor .box1 .caja .barra{
+	position: absolute;
+	width: 500px;
+	height: 2px;
+	background: #fff;
+	top: 150px;
+	right: -250px;
+	transition: all .5s;
+	transform: rotate(40deg);
+}
+.multiplexor .box .selector{
+	position: relative;
+	padding: 0 20px;
+	width: 200px;
+	height: 60px;
+}
+.multiplexor .box .selector .sel{
+	position: relative;
+	height: 60px;
+	line-height: 60px;
+}
+.multiplexor .box .selector .sel:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 3px;
+	width: 2px;
+	height: 20px;
+	background: #fff;
+}
+.multiplexor .box .selector .sel:after{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 3px;
+	width: 2px;
+	height: 20px;
+	background: #fff;
+}
+.multiplexor .box .selector .sel span{
+	position: absolute;
+	top: -45px;
+	color: #fff;
+	font-family: "Questrial";
+}
+.multiplexor .selector .btnInput{
+	width: 16px;
+	height: 30px;
+	top: 65px;
+	left: -4px;
+}
+.multiplexor .selector .btnInput:before{
+	left: 2px;
+	top: 16px;
+}
+.multiplexor .selector .check:before{
+	top: 2px;
+}
+/*---COMPARADOR---*************************************************************************************/
+.comparador .out span{
+	left: -45px;
+}
+.comparador .inputs span:before{
+	content: '';
+	position: absolute;
+	top: -10px;
+	right: -30px;
+	width: 30px;
+	height: 30px;
+	background: url(../files/ledwhite.png) center;
+	background-size: cover;
+}
+.comparador .inputs span.led1:before,
+span.led2:before,
+span.led3:before,
+span.led4:before{
+	background: url(../files/ledblue.png) center !important;
+	background-size: cover !important;
+	filter: drop-shadow(0 0 5px blue) !important;
+}
+.comparador .inputs span.led5:before,
+span.led6:before,
+span.led7:before,
+span.led8:before{
+	background: url(../files/ledred.png) center !important;
+	background-size: cover !important;
+	filter: drop-shadow(0 0 5px red) !important;
+}
+
+@media screen and (max-width: 950px){
+	.bar{
+		position: fixed !important;
+	}
+	.container{
+		padding-top: 80px;
+		height: 100%;
+	}
+	.content{
+		filter: blur(0) !important;
+	}
+	.logo{
+		position: fixed;
+		flex-direction: column;
+		top: 80px;
+		left: -250px;
+		width: 250px;
+		background: rgba(17,17,17,.9);
+		padding: 15px 0 !important;
+	}
+	.logo img{
+		margin: 10px 0 !important;
+	}
+	.logo span{
+		height: 50px;
+		line-height: 50px;
+	}
+	.btnMenu{
+		display: block;
+	}
+}
+.active{
+	left: 0;
+}
+
+
+
+.flex{display: flex;}
+.fdc{flex-direction: column;}
+.aic{align-items: center;}
+.jcc{justify-content: center;}
+.jcsb{justify-content: space-between;}
+.jcsa{justify-content: space-around;}
+.none{
+	display: none;
+	z-index: -1;
+}
